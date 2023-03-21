@@ -34,7 +34,7 @@ for(let i = 0;i<ar.length;i++){
     ar[i].addEventListener("click",(e) =>{
         if(e.target.value==='+' || e.target.value==='-'
             || e.target.value==='*' || e.target.value==='/' || e.target.value==='%'){
-                st = e.target.value;
+                st += e.target.value;
                 dis.innerHTML = st;
             }
             else if(e.target.textContent === 'C')
